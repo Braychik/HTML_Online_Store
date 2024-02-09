@@ -66,6 +66,9 @@ header {
   margin-top: 31px;
   height: 38px;
 }
+.browse_button{
+  position: relative;
+}
 .browseButt {
   width: 87px;
   background-color: #cdcdcc;
@@ -75,6 +78,19 @@ header {
   height: 38px;
   cursor: pointer;
 }
+// .browse_content {
+//   position: absolute;
+//   width: 262px;
+//   height: 500px;
+//   background-color: #ffffff;
+//   border-radius: 5px;
+//   box-shadow: 6px 3px 35px rgba(0,0,0,0.21);
+//   padding: 19px 15px;
+//   opacity: 0;
+// }
+// .browseButt:hover .browse_content{
+//   opacity: 1;
+// }
 .searcher {
   &_input {
     width: 317px;
@@ -117,21 +133,127 @@ header {
   border: none;
 }
 //----------------------------------------------------------
-.nav {
+// ----------------------------------------------------------
+.menu {
+  width: 685px;
   margin: 0 auto;
-  width: 680px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
-  &__link {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #222222;
-  }
+  list-style: none;
 }
+.menu-list {
+  display: inline;
+  position: relative;
+  padding: 20px 10px;
+}
+.nav__link {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.mega-box {
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 52px;
+  left: -10px;
+  display: none;
+}
+.mega-box::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: -8px;
+  left: 28px;
+  transform: rotate(45deg);
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+.mega-title {
+  width: 235px;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  margin-bottom: 16px;
+}
+.mega-subtitle {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.mega-link {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #646464;
+  display: block;
+  text-decoration: none;
+}
+.mega-link:hover {
+  color: $buttonColor;
+}
+.menu-item {
+  margin-right: 46px;
+}
+.menu-item:last-of-type {
+  margin-right: 0;
+}
+.menu-list:hover .mega-box {
+  display: flex;
+}
+.last:hover .mega-box {
+  right: 0;
+  left: auto;
+}
+.last:hover .mega-box::before {
+  right: 39px;
+  left: auto;
+}
+.menu-element {
+  left: -100px;
+}
+.menu-element-kid {
+  left: -200px;
+}
+.center-menu-women:hover .mega-box::before {
+  right: auto;
+  left: 131px;
+}
+.center-menu-kids:hover .mega-box::before {
+  right: auto;
+  left: 215px;
+}
+.menu-element-acces {
+  left: -275px;
+}
+.center-menu-access:hover .mega-box::before {
+  right: auto;
+  left: 325px;
+}
+
+.menu_banner {
+  width: 255px;
+  height: 118px;
+  background-color: #efefef;
+  margin-top: 15px;
+}
+
+//-----------------------------------------------------------
+//-----------------------------------------------------------
 .main_content {
   margin: 0 auto;
   width: 1600px;
@@ -542,44 +664,44 @@ header {
   letter-spacing: 0.025em;
   color: $buttonColor;
 }
-.top_footer_content{
+.top_footer_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-footer{
-    background: #e6e6e6;
-    width: 1600px;
-    height: 79px;
-    margin: 0 auto;
-    margin-top: 78px;
+footer {
+  background: #e6e6e6;
+  width: 1600px;
+  height: 79px;
+  margin: 0 auto;
+  margin-top: 78px;
 }
-.foot{
-    display: flex;
-    justify-content: space-between;
+.foot {
+  display: flex;
+  justify-content: space-between;
 }
-.foot p{
-    color: #7a7a7a;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: 30px;
+.foot p {
+  color: #7a7a7a;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 30px;
 }
-.social{
-    display: flex;
-    justify-content: space-between;
-    width: 148px;
-    height: 32px;
-    padding-top: 24px;
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 148px;
+  height: 32px;
+  padding-top: 24px;
 }
-.socialIcon{
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    padding: 8px 8px 8px 8px;
+.socialIcon {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  padding: 8px 8px 8px 8px;
 }
 .socialIcon:hover {
-    fill: white;
-    background: $buttonColor
+  fill: white;
+  background: $buttonColor;
 }
