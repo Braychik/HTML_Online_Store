@@ -74,18 +74,55 @@ header {
   height: 38px;
 }
 
-.browse_button {
+.browseButt {
   position: relative;
 }
 
-.browseButt {
+.browse {
   width: 87px;
   background-color: #cdcdcc;
   background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
   border: 1px solid #e6e6e6;
   border-radius: 3px 0px 0px 3px;
-  height: 38px;
+  height: 36px;
   cursor: pointer;
+}
+.browse_button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.browse_heading {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+.browse_box {
+  width: 262px;
+  height: 530px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  padding-left: 20px;
+  z-index: 2;
+  margin-top: 15px;
+  box-shadow: 6px 3px 35px rgba(0, 0, 0, 0.21);
+}
+.browse_box::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: -9px;
+  left: 61px;
+  transform: rotate(45deg);
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
 }
 
 .searcher_input {
@@ -93,6 +130,9 @@ header {
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   height: 36px;
+}
+.searcher .subButt {
+  border: none;
 }
 
 .lupSubBatt {
@@ -109,6 +149,122 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 31px;
+}
+
+.basketHead {
+  position: relative;
+}
+
+.basket_summary {
+  display: flex;
+}
+.basket_box {
+  position: absolute;
+  width: 230px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 16px;
+  padding: 17px 21px;
+  border: 1px solid #eeecec;
+}
+.basket_box::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: -9px;
+  left: 6px;
+  transform: rotate(45deg);
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+.basket_box-content1 {
+  display: flex;
+  justify-content: start;
+  gap: 14px;
+  width: 230px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 12px;
+  padding-bottom: 16px;
+}
+.basket_box-content2 {
+  display: flex;
+  justify-content: start;
+  gap: 14px;
+  width: 230px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 12px;
+  padding-bottom: 16px;
+}
+.basket_box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.basket_star-icon {
+  width: 11px;
+  height: 11px;
+}
+.basket_box-heading {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.basket_price {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+.basket_total-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.basket_total-heading {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.basket_total-price {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.basket_box-button {
+  width: 225px;
+  height: 50px;
+  background: none;
+  border-color: #ff6a6a;
+  color: #f26376;
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.basket_box-button:hover {
+  background: #ff6a6a;
+  color: white;
+  border: none;
+}
+.basket_box-butt2 {
+  margin-top: 12px;
 }
 
 .basketImg {
@@ -129,6 +285,23 @@ header {
   letter-spacing: 0.025em;
   color: #ffffff;
   border: none;
+}
+
+.menu {
+  width: 685px;
+  margin: 0 auto;
+  display: block;
+  text-align: justify;
+  list-style: none;
+}
+@supports (display: flex) {
+  .menu {
+    width: 685px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
 }
 
 .menu {
@@ -276,12 +449,13 @@ header {
 
 .mainContText {
   position: relative;
-  margin-top: -297px;
+  margin-top: -397px;
   margin-left: 227px;
   width: 521px;
   height: 110px;
   border-left: 12px solid #f16d7f;
   padding-left: 16px;
+  z-index: 1;
 }
 
 .promo__title {
