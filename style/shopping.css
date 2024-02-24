@@ -1,0 +1,217 @@
+.shoping-card_card-wrap {
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+.shoping-card_title-flex {
+  display: flex;
+  gap: 310px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 22px;
+}
+.shoping-card_title-flex-right {
+  width: 710px;
+  display: flex;
+  justify-content: space-between;
+}
+.shoping-card_titles {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+.shoping-card_card {
+  display: flex;
+  gap: 21px;
+}
+.shoping-card_card-img {
+  width: 100px;
+  height: 115px;
+}
+.shoping-card_card-heading {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 38px;
+  margin-top: 18px;
+}
+.shoping-card_card-char {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #575757;
+}
+.shoping-card_card-span {
+  font-weight: 300;
+  color: #6f6e6e;
+}
+.shoping-card_products {
+  display: flex;
+  gap: 168px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 25px;
+}
+.shoping-card_product-chars {
+  display: flex;
+  width: 675px;
+  justify-content: space-between;
+  align-items: center;
+}
+.shoping-card_input {
+  width: 44px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-left: 15px;
+}
+.shoping-card_icon {
+  width: 18px;
+  height: 18px;
+}
+.shoping-card_product-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+.shoping-card_product-butt {
+  width: 225px;
+  height: 50px;
+  background: none;
+  border: 1px solid #eaeaea;
+  color: #f26376;
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.shoping-card_product-butt:hover {
+  background: #ff6a6a;
+  color: white;
+  border: none;
+}
+.shoping-card_information {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.shoping-card_addres-form {
+  display: flex;
+  flex-direction: column;
+}
+.shoping-card_addres-title {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 22px;
+}
+.shoping-card_form-country {
+  font-family: Lato;
+  width: 327px;
+  padding: 16px 12px;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  font-weight: 300;
+  color: #b1b1b1;
+  margin-bottom: 20px;
+}
+.shoping-card_adress-form-input {
+  font-family: Lato;
+  width: 300px;
+  padding: 16px 12px;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.shoping-card_adress-form-btn {
+  width: 130px;
+  padding: 12px 14px;
+  border: 1px solid #eaeaea;
+  font-size: 11px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.shoping-card_adress-form-btn:hover {
+  background: #ff6a6a;
+  color: white;
+  border: none;
+}
+.shoping-card_discount-text {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.shoping-card_discount-form {
+  display: flex;
+  flex-direction: column;
+}
+.shoping-card_total {
+  width: 300px;
+  height: 90%;
+  background-color: #f5f3f3;
+  padding: 40px 43px;
+}
+.shoping-card_total-suptitle {
+  font-family: Lato;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin-bottom: 14px;
+  text-align: right;
+}
+.shoping-card_total-title {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e2e2e2;
+  text-align: right;
+}
+.shoping-card_total-title span {
+  color: #f16d7f;
+}
+.shoping-card_total-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  padding: 19px 41px;
+  background-color: #f16d7f;
+  border: 1px solid transparent;
+  text-align: center;
+}
+.shoping-card_total-btn:hover {
+  color: red;
+  background-color: white;
+  border-color: red;
+}/*# sourceMappingURL=shopping.css.map */
