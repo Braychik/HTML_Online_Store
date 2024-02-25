@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/checkout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
     rel="stylesheet">
-    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Checkout</title>
 </head>
 <body>
     <header>
@@ -90,8 +92,8 @@
                                 <h3 class="basket_total-heading">Total</h3>
                                 <p class="basket_total-price">$500.00</p>
                             </div>
-                            <button class="basket_box-button">Checkout</button>
-                            <button class="basket_box-button basket_box-butt2">Go to cart</button>
+                            <a href="#" class="basket_box-button">Checkout</a>
+                            <a href="shopping.html" class="basket_box-button basket_box-butt2">Go to cart</a>
                         </div>
                     </details>
                 </div>
@@ -325,12 +327,157 @@
             <div class="main-content container">
                 <h1 class="main-content_title">New Arrivals</h1>
                 <div class="main-content_nav">
-                    <a href="#" class="main-content_nav">Home/</a>
-                    <a href="#" class="main-content_nav">Men/</a>
+                    <a href="index.html" class="main-content_nav">Home/</a>
+                    <a href="product.html" class="main-content_nav">Men/</a>
                     <a href="#" class="main-content_nav main-content_current">New Arrivals</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="checkout container">
+        <details class="checkout_addres">
+            <summary class="checkout_addres-summary">01. SHIPPING ADRESS</summary>
+            <div class="checkout_addres-content">
+                <div class="checkout-quest">
+                    <p class="checkout-quest_title">CHECK AS A GUEST OR REGISTER</p>
+                    <p class="checkout-quest_text">Register with us for future convenience</p>
+                    <form action="#" class="checkout-quest_form">
+                        <div class="checkout-quest_input-wrapper">
+                            <input class="checkout-quest_input" type="radio" name="check" id="guest">
+                            <label class="checkout-quest_label" for="guest">checkout as guest</label>
+                        </div>
+                        <div class="checkout-quest_input-wrapper-register">
+                            <input class="checkout-quest_input" type="radio" name="check" id="register">
+                            <label class="checkout-quest_label" for="register">register</label>
+                        </div>
+                        <p class="checkout-quest_title">REGISTER AND SAVE TIME!</p>
+                        <p class="checkout-quest_text">Register with us for future convenience</p>
+                        <a href="#" class="checkout-quest_link">Fast and easy checkout</a>
+                        <a href="#" class="checkout-quest_link">Easy access to your order history and status</a>
+                        <button class="checkout-quest_btn">Continue</button>
+                    </form>
+                </div>
+                <div class="checkout-register">
+                    <p class="checkout-register_title">ALREADY REGISTED?</p>
+                    <p class="checkout-register_text">Please log in below</p>
+                    <form action="#" class="checkout-register_form">
+                        <p class="checkout-register_form-subtitle">EMAIL ADDRESS<sup><span>*</span></sup></p>
+                        <input type="email" name="email" class="checkout-register_input" required>
+                        <p class="checkout-register_form-subtitle">PASSWORD<sup><span>*</span></sup></p>
+                        <input type="password" name="password" class="checkout-register_input" required>
+                        <p class="checkout-register_required">* Required Fileds</p>
+                        <button type="submit" class="checkout-register_btn">Log in</button>
+                        <a href="#" class="checkout-register_link">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </details>
+        <details class="checkout_addres">
+            <summary class="checkout_addres-summary">02. BILLING INFORMATION</summary>
+            <div class="checkout_addres-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio, hic recusandae suscipit eaque dolores? Error, nobis dolore. Nihil ratione sint a harum quam eum unde dolorum nisi molestiae cupiditate facere ipsam explicabo, amet sunt mollitia eveniet ut, corrupti quo alias nemo dicta ipsa? Dolores, provident natus sed incidunt dolorum in fugit eaque aliquam excepturi doloribus. Natus quod perspiciatis ut corporis, eligendi in fuga! Ullam ad libero possimus corrupti ratione fugiat deserunt cum laborum exercitationem, debitis provident esse animi reiciendis optio! Magnam odit debitis eveniet, ad doloremque dolorem numquam natus nam nisi tempora voluptatibus quibusdam voluptas alias culpa ipsum aperiam vero officia eum molestias harum sed ipsa iure. Incidunt architecto dignissimos ab, beatae, ducimus modi ratione adipisci minus nulla dolor, esse praesentium sit autem dicta cum voluptate debitis iste. Perferendis voluptas debitis saepe libero, tempore alias, doloremque pariatur totam rem hic quaerat, necessitatibus recusandae omnis nihil consectetur nobis ratione vel.</p>
+            </div>
+        </details>
+        <details class="checkout_addres">
+            <summary class="checkout_addres-summary">03. SHIPPING INFORMATION</summary>
+            <div class="checkout_addres-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio, hic recusandae suscipit eaque dolores? Error, nobis dolore. Nihil ratione sint a harum quam eum unde dolorum nisi molestiae cupiditate facere ipsam explicabo, amet sunt mollitia eveniet ut, corrupti quo alias nemo dicta ipsa? Dolores, provident natus sed incidunt dolorum in fugit eaque aliquam excepturi doloribus. Natus quod perspiciatis ut corporis, eligendi in fuga! Ullam ad libero possimus corrupti ratione fugiat deserunt cum laborum exercitationem, debitis provident esse animi reiciendis optio! Magnam odit debitis eveniet, ad doloremque dolorem numquam natus nam nisi tempora voluptatibus quibusdam voluptas alias culpa ipsum aperiam vero officia eum molestias harum sed ipsa iure. Incidunt architecto dignissimos ab, beatae, ducimus modi ratione adipisci minus nulla dolor, esse praesentium sit autem dicta cum voluptate debitis iste. Perferendis voluptas debitis saepe libero, tempore alias, doloremque pariatur totam rem hic quaerat, necessitatibus recusandae omnis nihil consectetur nobis ratione vel.</p>
+            </div>
+        </details>
+        <details class="checkout_addres">
+            <summary class="checkout_addres-summary">04. SHIPPING METHOD</summary>
+            <div class="checkout_addres-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio, hic recusandae suscipit eaque dolores? Error, nobis dolore. Nihil ratione sint a harum quam eum unde dolorum nisi molestiae cupiditate facere ipsam explicabo, amet sunt mollitia eveniet ut, corrupti quo alias nemo dicta ipsa? Dolores, provident natus sed incidunt dolorum in fugit eaque aliquam excepturi doloribus. Natus quod perspiciatis ut corporis, eligendi in fuga! Ullam ad libero possimus corrupti ratione fugiat deserunt cum laborum exercitationem, debitis provident esse animi reiciendis optio! Magnam odit debitis eveniet, ad doloremque dolorem numquam natus nam nisi tempora voluptatibus quibusdam voluptas alias culpa ipsum aperiam vero officia eum molestias harum sed ipsa iure. Incidunt architecto dignissimos ab, beatae, ducimus modi ratione adipisci minus nulla dolor, esse praesentium sit autem dicta cum voluptate debitis iste. Perferendis voluptas debitis saepe libero, tempore alias, doloremque pariatur totam rem hic quaerat, necessitatibus recusandae omnis nihil consectetur nobis ratione vel.</p>
+            </div>
+        </details>
+        <details class="checkout_addres">
+            <summary class="checkout_addres-summary">05. PAYMENT METHOD</summary>
+            <div class="checkout_addres-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio, hic recusandae suscipit eaque dolores? Error, nobis dolore. Nihil ratione sint a harum quam eum unde dolorum nisi molestiae cupiditate facere ipsam explicabo, amet sunt mollitia eveniet ut, corrupti quo alias nemo dicta ipsa? Dolores, provident natus sed incidunt dolorum in fugit eaque aliquam excepturi doloribus. Natus quod perspiciatis ut corporis, eligendi in fuga! Ullam ad libero possimus corrupti ratione fugiat deserunt cum laborum exercitationem, debitis provident esse animi reiciendis optio! Magnam odit debitis eveniet, ad doloremque dolorem numquam natus nam nisi tempora voluptatibus quibusdam voluptas alias culpa ipsum aperiam vero officia eum molestias harum sed ipsa iure. Incidunt architecto dignissimos ab, beatae, ducimus modi ratione adipisci minus nulla dolor, esse praesentium sit autem dicta cum voluptate debitis iste. Perferendis voluptas debitis saepe libero, tempore alias, doloremque pariatur totam rem hic quaerat, necessitatibus recusandae omnis nihil consectetur nobis ratione vel.</p>
+            </div>
+        </details>
+        <details class="checkout_addres">
+            <summary class="checkout_addres-summary">06. ORDER REVIEW</summary>
+            <div class="checkout_addres-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio, hic recusandae suscipit eaque dolores? Error, nobis dolore. Nihil ratione sint a harum quam eum unde dolorum nisi molestiae cupiditate facere ipsam explicabo, amet sunt mollitia eveniet ut, corrupti quo alias nemo dicta ipsa? Dolores, provident natus sed incidunt dolorum in fugit eaque aliquam excepturi doloribus. Natus quod perspiciatis ut corporis, eligendi in fuga! Ullam ad libero possimus corrupti ratione fugiat deserunt cum laborum exercitationem, debitis provident esse animi reiciendis optio! Magnam odit debitis eveniet, ad doloremque dolorem numquam natus nam nisi tempora voluptatibus quibusdam voluptas alias culpa ipsum aperiam vero officia eum molestias harum sed ipsa iure. Incidunt architecto dignissimos ab, beatae, ducimus modi ratione adipisci minus nulla dolor, esse praesentium sit autem dicta cum voluptate debitis iste. Perferendis voluptas debitis saepe libero, tempore alias, doloremque pariatur totam rem hic quaerat, necessitatibus recusandae omnis nihil consectetur nobis ratione vel.</p>
+            </div>
+        </details>
+	</section>
+    <section class="subscribe">
+        <div class="backImg">
+            <img src="./img/backgroindInSubscribe.png" alt="">
+        </div>
+        <div class="subsConteiner container">
+            <div class="subsCard">
+                <img src="./img/ava.png" alt="">
+                <h4>“Vestibulum quis porttitor dui! Quisque viverra 
+                    nunc mi, a pulvinar purus condimentum“
+                </h4>
+            </div>
+            <div class="subsCard2">
+                <h2>Subscribe</h2>
+                <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                <div class="searcher2">
+                    <input type="email" placeholder="      Enter Your Email">
+                    <button class="subButt">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="top_footer">
+        <div class="top_footer_content container">
+            <div class="infoInTopFoot">
+                <div class="logo_head logoInbottom">
+                    <a class="imgLogo" href="#"><img src="img/logo.png" alt=""></a>
+                    <h1 class="logo_text">BRAN<span class="logo_span">D</span></h1>
+                </div>
+                <p class="textInInfo">
+Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. 
+<br>
+<br>
+Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+Efficiently plagiarize 24/365 action items and focused infomediaries.</p>
+            </div>
+            <div class="listTopFoot">
+                <div class="companyList UlList">
+                    <h1>Company</h1>
+                    <a href="#" class="listLink">Home</a>
+                    <a href="#" class="listLink">Shop</a>
+                    <a href="#" class="listLink">About</a>
+                    <a href="#" class="listLink">How It Works</a>
+                    <a href="#" class="listLink">Contact</a>
+                </div>
+                <div class="infoList UlList">
+                    <h1>Information</h1>
+                    <a href="#" class="listLink">Tearms & Condition</a>
+                    <a href="#" class="listLink">Privacy Policy
+                    </a>
+                    <a href="#" class="listLink">How to Buy</a>
+                    <a href="#" class="listLink">How to Sell</a>
+                    <a href="#" class="listLink">Promotion</a>
+                </div>
+                <div class="categoryList UlList">
+                    <h1>Shop Category</h1>
+                    <a href="#" class="listLink">Men</a>
+                    <a href="#" class="listLink">Women</a>
+                    <a href="#" class="listLink">Child</a>
+                    <a href="#" class="listLink">Apparel</a>
+                    <a href="#" class="listLink">Brows All</a>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <footer>
+        <article class="foot container">
+            <p>© 2022  Brand  All Rights Reserved.</p>
+            <div class="social">
+                <img class="socialIcon" src="./img/facebook.svg" alt="">
+                <img class="socialIcon" src="/img/instagram.svg" alt="">
+                <img class="socialIcon" src="/img/pinterest.svg" alt="">
+                <img class="socialIcon" src="/img/twitter.svg" alt="">
+            </div>
+        </article>
+    </footer>
 </body>
 </html>

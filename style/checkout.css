@@ -1,0 +1,165 @@
+.checkout {
+  margin-top: 33px;
+}
+.checkout_addres {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  margin-bottom: 33px;
+}
+.checkout_addres-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.checkout_addres-summary {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  display: flex;
+}
+
+.checkout-quest {
+  margin-left: 35px;
+  font-family: Lato;
+}
+.checkout-quest_title {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+.checkout-quest_text {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-bottom: 34px;
+}
+.checkout-quest_link {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.54;
+  color: #b3b2b2;
+  transition: color 0.2s;
+}
+.checkout-quest_link:before {
+  content: "\f101";
+  font-family: "fontAwesome";
+  margin-right: 8px;
+}
+.checkout-quest_link:hover {
+  color: red;
+}
+.checkout-quest_btn {
+  margin-top: 38px;
+  padding: 19px 54px;
+  border: solid 1px #eaeaea;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.checkout-quest_btn:hover {
+  color: #fff;
+  background-color: red;
+}
+.checkout-quest_input {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  cursor: pointer;
+}
+.checkout-quest_label {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-left: 14px;
+  cursor: pointer;
+}
+.checkout-quest_input-wrapper {
+  margin-bottom: 20px;
+}
+.checkout-quest_input-wrapper-register {
+  margin-bottom: 33px;
+}
+
+.checkout-register {
+  font-family: Lato;
+}
+.checkout-register_title {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+.checkout-register_text {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-bottom: 27px;
+}
+.checkout-register_form-subtitle {
+  font-size: 12px;
+  color: #222222;
+  margin-bottom: 16px;
+}
+.checkout-register_form-subtitle sup {
+  vertical-align: baseline;
+}
+.checkout-register_form-subtitle span {
+  color: #ff0d0d;
+  font-size: 17px;
+}
+.checkout-register_input {
+  width: 390px;
+  margin-bottom: 23px;
+  border: solid 1px #eaeaea;
+  padding: 14px;
+}
+.checkout-register_required {
+  font-size: 13px;
+  color: #ff0d0d;
+  margin-bottom: 30px;
+}
+.checkout-register_btn {
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  padding: 20px 55px;
+  margin-right: 32px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.checkout-register_btn:hover {
+  color: #fff;
+  background-color: red;
+}
+.checkout-register_link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #222222;
+  transition: color 0.2s;
+}
+.checkout-register_link:hover {
+  color: red;
+}/*# sourceMappingURL=checkout.css.map */
